@@ -1,13 +1,15 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## 37 Lab - Login and Auth
 
-### Author: Student/Group Name
+### Author: Michael George, Code 401d28
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
+[![Build Status](https://travis-ci.com/michaelageorge/37-login-auth.svg?branch=master)](https://travis-ci.com/michaelageorge/37-login-auth)
+
+* [repo](https://github.com/michaelageorge/37-login-auth)
+* [travis](https://travis-ci.com/michaelageorge/37-login-auth)
 * [back-end](http://xyz.com) (when applicable)
 * [front-end](http://xyz.com) (when applicable)
 
@@ -27,20 +29,17 @@ Usage Notes or examples
 
 ### Setup
 #### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+* If you are a windows user, you may need to place `SKIP_PREFLIGHT_CHECK=true` in your `.env` file.
 
 #### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+* Run the command `npm start` in the root directory
   
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+* Run tests by running the command `npm run test` in the root directory
+* We are asserting the existence of components based on user login state.
+* A mocking interface was created to fake a server/login to simulate.
 
 #### UML
 Link to an image of the UML for your application and response to events
+
+
