@@ -1,0 +1,75 @@
+@import "./lib/mixins";
+@import "./lib/variables";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 80%;
+  min-width: 550px;
+  height: 100%;
+  margin: 0px auto;
+  font-family: "Courier New", Courier, monospace;
+  background: $ghostWhite;
+  color: $black;
+}
+
+header {
+  width: 100%;
+  margin-top: $space;
+  @include center;
+
+  nav {
+    margin-bottom: $space;
+    
+    ul {
+      
+      p {
+        padding-bottom: $space;
+        font-size: 32px;
+      }
+      
+      li {
+        display: inline-block;
+        margin-right: $space * 2;
+        
+        span:hover {
+          color: $accentColor;
+        }
+      }
+    }
+  }
+}
+
+section {
+  width: 100%;
+  margin-top: $space;
+  @include center;
+
+  ul {
+     @include appealingBorder(1px);
+     @include borderRadius(10px);
+    p{
+
+    }
+    
+   li {
+    margin-top: $space;
+   }
+   
+   li:hover {
+     color: $accentColor;
+   }
+  }
+
+  button {
+
+  }
+
+  form {
+    @include appealingBorder(1px);
+    @include borderRadius(10px);
+  }
+}
